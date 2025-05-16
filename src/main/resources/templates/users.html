@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Students</title></head>
+<body>
+<h1>Student List</h1>
+<form th:action="@{/users}" method="post" th:object="${user}">
+    <input type="text" th:field="*{name}" placeholder="Name" required />
+    <input type="text" th:field="*{email}" placeholder="Email" required />
+    <button type="submit">Add</button>
+</form>
+<hr/>
+<table border="1">
+    <tr><th>ID</th><th>Name</th><th>Email</th></tr>
+    <tr th:each="u : ${users}">
+        <td th:text="${u.id}">1</td>
+        <td th:text="${u.name}">John</td>
+        <td th:text="${u.email}">john@example.com</td>
+    </tr>
+</table>
+</body>
+</html>
