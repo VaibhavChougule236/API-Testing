@@ -46,3 +46,14 @@ Set the header:
 Accept: application/json
 You will receive a JSON array of user objects.
 
+
+## Images
+
+### web version:
+
+![image](https://github.com/user-attachments/assets/381c101e-ba77-4568-8b4c-6c4ddcfbb6df)
+
+### JSON version:
+![image](https://github.com/user-attachments/assets/78a6e8c9-a4cc-4e3f-a4eb-626308cf76da)
+
+
